@@ -8,7 +8,7 @@ from matplotlib.ticker import AutoMinorLocator
 
 # Globals
 
-PLOT_OUTPUT_FOLDER = os.path.join(os.getcwd(), 'charts')
+PLOT_OUTPUT_FOLDER = os.path.join(os.getcwd(), 'plots')
 
 MEN_PUSHUPS = pd.read_csv('scores-pushup-men.csv', index_col=0)
 MEN_SITUPS = pd.read_csv('scores-situp-men.csv', index_col=0)
@@ -167,12 +167,12 @@ def plot_and_save_svgs():
     os.makedirs(PLOT_OUTPUT_FOLDER, exist_ok=True)
 
     create_multi_line_plots = [
-        (create_men_multi_pushup_plot, 'men_pushup_scores_all.svg'),
-        (create_men_multi_situp_plot, 'men_situp_scores_all.svg'),
-        (create_men_multi_run_plot, 'men_run_scores_all.svg'),
-        (create_women_multi_pushup_plot, 'women_pushup_scores_all.svg'),
-        (create_women_multi_situp_plot, 'women_situp_scores_all.svg'),
-        (create_women_multi_run_plot, 'women_run_scores_all.svg')
+        (create_men_multi_pushup_plot, 'men_pushup_scores_all'),
+        (create_men_multi_situp_plot, 'men_situp_scores_all'),
+        (create_men_multi_run_plot, 'men_run_scores_all'),
+        (create_women_multi_pushup_plot, 'women_pushup_scores_all'),
+        (create_women_multi_situp_plot, 'women_situp_scores_all'),
+        (create_women_multi_run_plot, 'women_run_scores_all')
     ]
 
     create_single_line_plots = chain.from_iterable((lambda age, age_label: (
