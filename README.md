@@ -305,7 +305,7 @@ Use these consolidated charts to see macro performance trends across all age cat
 
 1. **Clone repository**:
    ```bash
-   git clone https://github.com/your-username/ippt-charts.git
+   git clone https://github.com/yanhwee/ippt-charts.git
    cd ippt-charts
    ```
 
