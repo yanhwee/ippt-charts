@@ -41,7 +41,7 @@ def create_men_pushup_plot(age):
     return create_line_plot(
         series=MEN_PUSHUPS[age],
         color='#1F77B4',
-        title=f'Pushup Scores (Age {age}) (for Servicemen)',
+        title=f'Push-up Scores (Age {age}) (Servicemen)',
         xlabel='Repetition',
         ylabel='Score'
     )
@@ -50,7 +50,7 @@ def create_men_situp_plot(age):
     return create_line_plot(
         series=MEN_SITUPS[age],
         color='#FF7F0E',
-        title=f'Situp Scores (Age {age}) (for Servicemen)',
+        title=f'Sit-up Scores (Age {age}) (Servicemen)',
         xlabel='Repetition',
         ylabel='Score'
     )
@@ -59,7 +59,7 @@ def create_men_run_plot(age):
     return create_line_plot(
         series=MEN_RUNS[age],
         color='#2CA02C',
-        title=f'Run Scores (Age {age}) (for Servicemen)',
+        title=f'2.4km Scores (Age {age}) (Servicemen)',
         xlabel='Time (in secs)',
         ylabel='Score'
     )
@@ -68,7 +68,7 @@ def create_women_pushup_plot(age):
     return create_line_plot(
         series=WOMEN_PUSHUPS[age],
         color='#56B4E9',
-        title=f'Pushup Scores (Age {age}) (for Servicewomen)',
+        title=f'Bent-Knee Push-up Scores (Age {age}) (Servicewomen)',
         xlabel='Repetition',
         ylabel='Score'
     )
@@ -77,7 +77,7 @@ def create_women_situp_plot(age):
     return create_line_plot(
         series=WOMEN_SITUPS[age],
         color='#E69F00',
-        title=f'Situp Scores (Age {age}) (for Servicewomen)',
+        title=f'Sit-up Scores (Age {age}) (Servicewomen)',
         xlabel='Repetition',
         ylabel='Score'
     )
@@ -86,7 +86,7 @@ def create_women_run_plot(age):
     return create_line_plot(
         series=WOMEN_RUNS[age],
         color='#009E73',
-        title=f'Run Scores (Age {age}) (for Servicewomen)',
+        title=f'2.4km Scores (Age {age}) (Servicewomen)',
         xlabel='Time (in secs)',
         ylabel='Score'
     )
@@ -105,7 +105,7 @@ def create_multi_line_plot(dataframe, title, xlabel, ylabel, legend_loc):
 def create_men_multi_pushup_plot():
     return create_multi_line_plot(
         dataframe=MEN_PUSHUPS,
-        title='Pushup Scores (All Ages) (for Servicemen)',
+        title='Push-up Scores (All Ages) (Servicemen)',
         xlabel='Repetition',
         ylabel='Score',
         legend_loc='lower right'
@@ -114,7 +114,7 @@ def create_men_multi_pushup_plot():
 def create_men_multi_situp_plot():
     return create_multi_line_plot(
         dataframe=MEN_SITUPS,
-        title='Situp Scores (All Ages) (for Servicemen)',
+        title='Sit-up Scores (All Ages) (Servicemen)',
         xlabel='Repetition',
         ylabel='Score',
         legend_loc='lower right'
@@ -123,7 +123,7 @@ def create_men_multi_situp_plot():
 def create_men_multi_run_plot():
     return create_multi_line_plot(
         dataframe=MEN_RUNS,
-        title='Run Scores (All Ages) (for Servicemen)',
+        title='2.4km Scores (All Ages) (Servicemen)',
         xlabel='Time (in secs)',
         ylabel='Score',
         legend_loc='lower left'
@@ -132,7 +132,7 @@ def create_men_multi_run_plot():
 def create_women_multi_pushup_plot():
     return create_multi_line_plot(
         dataframe=WOMEN_PUSHUPS,
-        title='Pushup Scores (All Ages) (for Servicewomen)',
+        title='Bent-Knee Push-up Scores (All Ages) (Servicewomen)',
         xlabel='Repetition',
         ylabel='Score',
         legend_loc='lower right'
@@ -141,7 +141,7 @@ def create_women_multi_pushup_plot():
 def create_women_multi_situp_plot():
     return create_multi_line_plot(
         dataframe=WOMEN_SITUPS,
-        title='Situp Scores (All Ages) (for Servicewomen)',
+        title='Sit-up Scores (All Ages) (Servicewomen)',
         xlabel='Repetition',
         ylabel='Score',
         legend_loc='lower right'
@@ -150,7 +150,7 @@ def create_women_multi_situp_plot():
 def create_women_multi_run_plot():
     return create_multi_line_plot(
         dataframe=WOMEN_RUNS,
-        title='Run Scores (All Ages) (for Servicewomen)',
+        title='2.4km Scores (All Ages) (Servicewomen)',
         xlabel='Time (in secs)',
         ylabel='Score',
         legend_loc='lower left'
