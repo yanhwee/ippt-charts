@@ -42,7 +42,7 @@ def create_men_pushup_plot(age):
         series=MEN_PUSHUPS[age],
         color='#1F77B4',
         title=f'Push-up Scores (Age {age}) (Servicemen)',
-        xlabel='Repetition',
+        xlabel='Repetitions',
         ylabel='Score'
     )
 
@@ -51,7 +51,7 @@ def create_men_situp_plot(age):
         series=MEN_SITUPS[age],
         color='#FF7F0E',
         title=f'Sit-up Scores (Age {age}) (Servicemen)',
-        xlabel='Repetition',
+        xlabel='Repetitions',
         ylabel='Score'
     )
 
@@ -69,7 +69,7 @@ def create_women_pushup_plot(age):
         series=WOMEN_PUSHUPS[age],
         color='#56B4E9',
         title=f'Bent-Knee Push-up Scores (Age {age}) (Servicewomen)',
-        xlabel='Repetition',
+        xlabel='Repetitions',
         ylabel='Score'
     )
 
@@ -78,7 +78,7 @@ def create_women_situp_plot(age):
         series=WOMEN_SITUPS[age],
         color='#E69F00',
         title=f'Sit-up Scores (Age {age}) (Servicewomen)',
-        xlabel='Repetition',
+        xlabel='Repetitions',
         ylabel='Score'
     )
 
@@ -106,7 +106,7 @@ def create_men_multi_pushup_plot():
     return create_multi_line_plot(
         dataframe=MEN_PUSHUPS,
         title='Push-up Scores (All Ages) (Servicemen)',
-        xlabel='Repetition',
+        xlabel='Repetitions',
         ylabel='Score',
         legend_loc='lower right'
     )
@@ -115,7 +115,7 @@ def create_men_multi_situp_plot():
     return create_multi_line_plot(
         dataframe=MEN_SITUPS,
         title='Sit-up Scores (All Ages) (Servicemen)',
-        xlabel='Repetition',
+        xlabel='Repetitions',
         ylabel='Score',
         legend_loc='lower right'
     )
@@ -133,7 +133,7 @@ def create_women_multi_pushup_plot():
     return create_multi_line_plot(
         dataframe=WOMEN_PUSHUPS,
         title='Bent-Knee Push-up Scores (All Ages) (Servicewomen)',
-        xlabel='Repetition',
+        xlabel='Repetitions',
         ylabel='Score',
         legend_loc='lower right'
     )
@@ -142,7 +142,7 @@ def create_women_multi_situp_plot():
     return create_multi_line_plot(
         dataframe=WOMEN_SITUPS,
         title='Sit-up Scores (All Ages) (Servicewomen)',
-        xlabel='Repetition',
+        xlabel='Repetitions',
         ylabel='Score',
         legend_loc='lower right'
     )
